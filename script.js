@@ -15,12 +15,12 @@ var newsDataArr = [];
 
 // apis 
 const API_KEY = "4a6919d095a94f29ba1b05812ad771d9";
-const HEADLINES_NEWS = "https://newsapi.org/v2/top-headlines?country=in&apiKey=";
-const GENERAL_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=";
-const BUSINESS_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=";
-const SPORTS_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=";
-const ENTERTAINMENT_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=";
-const TECHNOLOGY_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=technology&pageSize=8&apiKey=";
+const HEADLINES_NEWS = "https://newsapi.org/v2/everything?q=in&apiKey=";
+const GENERAL_NEWS = "https://newsapi.org/v2/everything?q=general&apiKey=";
+const BUSINESS_NEWS = "https://newsapi.org/v2/everything?q=business&apiKey=";
+const SPORTS_NEWS = "https://newsapi.org/v2/everything?q=sports&apiKey=";
+const ENTERTAINMENT_NEWS = "https://newsapi.org/v2/everything?q=entertainment&apiKey=";
+const TECHNOLOGY_NEWS = "https://newsapi.org/v2/everything?q=technology&apiKey=";
 const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=";
 
 window.onload = function() {
