@@ -62,15 +62,10 @@ searchBtn.addEventListener("click",function(){
 const fetchHeadlines = async () => {
     const response = await fetch(HEADLINES_NEWS+API_KEY);
     newsDataArr = [];
-    if(response.status >=100 && response.status < 200) {
-        const myJson = await response.json();
-        newsDataArr = myJson.articles;
-    } else {
-        // handle errors
-        console.log(response.status, response.statusText);
-        newsdetails.innerHTML = "<h5>No data found.</h5>"
-        return;
-    }
+    
+    const myJson = await response.json();
+    newsDataArr = myJson.articles;
+    
 
     displayNews();
 }
