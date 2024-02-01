@@ -63,8 +63,15 @@ const fetchHeadlines = async () => {
     const response = await fetch(HEADLINES_NEWS+API_KEY);
     newsDataArr = [];
     
-    const myJson = await response.json();
-    newsDataArr = myJson.articles;
+    if(response.status >=200 && response.status < 300) {
+        const myJson = await response.json();
+        newsDataArr = myJson.articles;
+    } else {
+        // handle errors
+        console.log(response.status, response.statusText);
+        newsdetails.innerHTML = "<h5>No data found.</h5>"
+        return;
+    }
     
 
     displayNews();
