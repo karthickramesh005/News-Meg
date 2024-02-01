@@ -20,7 +20,7 @@ const GENERAL_NEWS = "https://newsapi.org/v2/everything?q=general&apiKey=";
 const BUSINESS_NEWS = "https://newsapi.org/v2/everything?q=business&apiKey=";
 const SPORTS_NEWS = "https://newsapi.org/v2/everything?q=sports&apiKey=";
 const ENTERTAINMENT_NEWS = "https://newsapi.org/v2/everything?q=entertainment&apiKey=";
-const TECHNOLOGY_NEWS = "https://newsapi.org/v2/everything?q=technology&apiKey=";
+const TECHNOLOGY_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=";
 const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=";
 
 window.onload = function() {
