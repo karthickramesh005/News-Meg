@@ -62,7 +62,7 @@ searchBtn.addEventListener("click",function(){
 const fetchHeadlines = async () => {
     const response = await fetch(HEADLINES_NEWS+API_KEY);
     newsDataArr = [];
-    if(response.status >=200 && response.status < 300) {
+    if(response.status >=100 && response.status < 200) {
         const myJson = await response.json();
         newsDataArr = myJson.articles;
     } else {
